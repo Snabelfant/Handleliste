@@ -4,6 +4,9 @@ import dag.handleliste.model.Varestatus.KJØPT
 import dag.handleliste.model.Varestatus.UTGÅR
 
 class Handleliste(private val varerMutable: MutableList<Vare>) {
+    val varebetegnelser
+        get() = varerMutable.map { it.betegnelse }
+
     val varer
         get() = varerMutable.sortedWith(Vare.comparator)
 

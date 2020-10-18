@@ -38,8 +38,8 @@ class ForslagslisteAdapter(context: Context?) : BaseAdapter(), Filterable {
     override fun getFilter(): Filter = ForslagFilter()
 
     private inner class ForslagFilter : Filter() {
-        override fun performFiltering(prefix: CharSequence?): Filter.FilterResults {
-            val results = Filter.FilterResults()
+        override fun performFiltering(prefix: CharSequence?): FilterResults {
+            val results = FilterResults()
 
             Log.d("Filter", "filter cs='$prefix'")
             if (!prefix.isNullOrBlank()) {
@@ -50,7 +50,7 @@ class ForslagslisteAdapter(context: Context?) : BaseAdapter(), Filterable {
             return results
         }
 
-        override fun publishResults(constraint: CharSequence?, results: Filter.FilterResults) {
+        override fun publishResults(constraint: CharSequence?, results: FilterResults) {
             Log.d("Filter", "sortert=${results.values}")
 
             if (results.count > 0) {

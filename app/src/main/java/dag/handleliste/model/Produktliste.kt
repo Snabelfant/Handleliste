@@ -16,7 +16,7 @@ class Produktliste(private val produkterMutable: MutableList<Produkt>) {
     }
 
     fun finn(betegnelse: String) = produkter.firstOrNull { it.betegnelse == betegnelse }
-    fun forslag(prefix: String): List<String> {
+    fun forslag(prefix: String, varerÅUtelukke: List<String>): List<String> {
         val startsWith = produkterMutable
             .filter { it.betegnelse.startsWith(prefix, true) }
             .map { it.betegnelse }
@@ -27,7 +27,7 @@ class Produktliste(private val produkterMutable: MutableList<Produkt>) {
             .map { it.betegnelse }
             .sorted()
 
-        return startsWith + contains
+        return (startsWith + contains).filter { forslag -> varerÅUtelukke.none { utelukke -> utelukke.equals(forslag, true)  } }
     }
 
 }

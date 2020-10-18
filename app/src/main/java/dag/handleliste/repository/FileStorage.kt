@@ -55,7 +55,7 @@ class FileStorage(private val dir: File) {
 
     fun finnProdukt(betegnelse: String) = produktliste.finn(betegnelse)
 
-    fun forslag(prefix: String) = produktliste.forslag(prefix)
+    fun forslag(prefix: String) = produktliste.forslag(prefix, handleliste.varebetegnelser )
 
     fun setVarestatus(index: Int, nyVarestatus: Varestatus) {
         handleliste.varer[index].status = nyVarestatus
