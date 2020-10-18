@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/handlelisteactivitymenu_legg_til"
+        android:title="NY"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/handlelisteactivitymenu_ny_handleliste"
+        android:title="TØM" />
+    <item
+        android:id="@+id/handlelisteactivitymenu_send_sms"
+        android:title="SEND SMS" />
+    <item
+        android:id="@+id/handlelisteactivitymenu_send_epost"
+        android:title="SEND E-POST" />
+    <item
+        android:id="@+id/handlelisteactivitymenu_produktliste"
+        android:title="PRODUKTER" />
+</menu>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vareeditor_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:text="Vare"
+            android:textSize="25dp"></TextView>
+
+        <AutoCompleteTextView
+            android:id="@+id/vareeditor_betegnelse"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:bufferType="editable"
+            android:inputType="text"
+            android:textSize="25dp"></AutoCompleteTextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:text="Mengde"
+            android:textSize="25dp"></TextView>
+
+        <EditText
+            android:id="@+id/vareeditor_mengde"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:bufferType="editable"
+            android:gravity="center_vertical"
+            android:inputType="text"
+            android:textSize="25dp"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:text="Plass"
+            android:textSize="25dp"></TextView>
+
+        <Spinner
+            android:id="@+id/vareeditor_plassering"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textSize="25dp"></Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:text="Når"
+            android:textSize="25dp"></TextView>
+
+        <Spinner
+            android:id="@+id/vareeditor_status"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textSize="25dp"></Spinner>
+    </LinearLayout>
+</LinearLayout>

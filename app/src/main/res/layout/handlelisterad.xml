@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/handleliste_varemengde"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:text="(mengde)"
+        android:textSize="30dp"></TextView>
+
+    <TextView
+        android:id="@+id/handleliste_varebetegnelse"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:singleLine="true"
+        android:text="(varenavn)"
+        android:textSize="30dp"></TextView>
+
+    <TextView
+        android:id="@+id/handleliste_vareplassering"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:text="(plassering)"
+        android:textSize="30dp"></TextView>
+
+</LinearLayout>
+
